@@ -22,7 +22,7 @@ if user_menu == 'Season Summary':
     
     match_per_season = df1.season.value_counts().reset_index().rename(columns={'index':'season','season':
                                                                            'matches'})
-    matches_per_season = match_per_season.sort_values(by = 'season')
+    matches_per_season = match_per_season.sort_values()
     season_score = season_data.groupby('season')['total_runs'].sum().reset_index()
 
     runs_per_season = pd.concat([match_per_season, season_score.iloc[:,1]], axis = 1)
