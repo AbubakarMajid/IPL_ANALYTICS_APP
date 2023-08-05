@@ -20,8 +20,8 @@ if user_menu == 'Season Summary':
     
     st.markdown("<h1 style='text-align: center; font-family:georgia,garamond,serif;font-size:40px;'>Season Summary</h1>", unsafe_allow_html=True)
     
-    match_per_season = df1.season.value_counts().reset_index().rename(columns={'index':'Season','season':
-                                                                           'matches'}).sort_values("Season")
+    match_per_season = df1.season.value_counts().reset_index().rename(columns={'index':'season','season':
+                                                                           'matches'}).sort_values("season")
     
     season_score = season_data.groupby('season')['total_runs'].sum().reset_index()
 
