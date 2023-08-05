@@ -1,0 +1,62 @@
+IPL analysis
+
+1. Overall analysis
+     - seasons
+     - matches
+     - host cities
+     - teams
+     - players
+     - matches over seasons
+     - score over seasons
+     - toss winning percentage
+     - match winning percentage
+     - Top 10 batsmans
+     - Top 10 bowlers
+     - Highest totals
+     - most player of matches awards
+     - most player of matches
+
+
+  Player wise analysis
+
+  1. for batsmen:
+     - total runs
+     - sixes
+     - fours
+     - average
+     - strike rate
+     - no. of player of matches
+     - high score
+
+  2. for bowler:
+      - mathces played
+      - total overs bowled
+      - total wickets (category)
+      - average
+      - economy 
+      - highest wickets in an innings
+
+Season Summary
+    
+      - season
+      - mathces
+      - score
+      - finalist 1
+      - finalist 2
+      - winner
+      - runner up
+      - player of season
+
+
+Team wise analysis
+
+      1. No. of season wins
+      1. Runner ups
+      3. highest totals first innings
+      4. highest run second innings
+      5. Toss winning percentage
+      6. match winning percentage
+      7. Top 10 batsmen
+      8. Top 10 bowlers
+   
+  
