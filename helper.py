@@ -277,7 +277,7 @@ def wickets_haul(df,player):
      a = str(a) + 's'
      l.append(a) 
   temp['is_wicket'] = l
-  temp = temp.value_counts().reset_index().rename({0:'times'},axis = 1)
+  temp = temp.value_counts().reset_index().rename({"count":'times'},axis = 1)
   return temp
   """fig = go.Figure(data = go.Pie(labels = temp.is_wicket , values = temp.times))
   fig.update_traces(hoverinfo='percent', textinfo='label+value', textfont_size=15,
