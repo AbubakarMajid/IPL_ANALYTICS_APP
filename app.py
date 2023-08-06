@@ -249,9 +249,8 @@ elif user_menu == 'Player wise analysis':
         st.title(bestfigures)
     
     st.subheader('Wicket Hauls')
-    #fig14 = helper.wickets_haul(bowling_df,selected_bowler)
-    #st.plotly_chart(fig14)
-    st.table(helper.wickets_haul(bowling_df,selected_bowler))
+    fig14 = helper.wickets_haul(bowling_df,selected_bowler)
+    st.plotly_chart(fig14)
     
 elif user_menu == 'Team wise analysis':
     
