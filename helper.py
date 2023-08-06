@@ -291,7 +291,7 @@ def wickets_haul(df,player):
   return fig
 
 def season_wins(df,team):
-    temp_df = df.drop_duplicates(subset = {'season'},keep = 'last')
+    temp_df = df.drop_duplicates(subset = ['season'],keep = 'last')
     return f"{temp_df[temp_df.winner == team].shape[0]} times"
 
 def runner_up_times(df,team):
