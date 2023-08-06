@@ -260,7 +260,7 @@ def economy(df,bowler):
   return (df[(df.bowler == bowler) & (df.extras_type != 'byes') & (df.extras_type != 'legbyes')].total_runs.sum() / df[(df.bowler == bowler) & (df.extras_type != 'wides') & (df.extras_type != 'noballs') & (df.extras_type != 'penalty')].ball.count()) * 6
 
 def best_figures(df,player):
-  temp_df = df[df.bowler == player].groupby('id')['is_wicket','total_runs'].sum()
+  temp_df = df[df.bowler == player].groupby('id')[['is_wicket','total_runs']].sum()
   n = temp_df.is_wicket.max()
   runs = temp_df[temp_df.is_wicket == n].total_runs.min()
   return (f"{runs}-{n}")
