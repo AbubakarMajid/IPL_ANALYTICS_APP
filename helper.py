@@ -296,7 +296,7 @@ def season_wins(df,team):
 
 def runner_up_times(df,team):
     list1 = []
-    temp = df.drop_duplicates(subset = {"season"},keep = 'last')
+    temp = df.drop_duplicates(subset = ["season"],keep = 'last')
     for a,b,c in zip(temp['team1'],temp['team2'],temp['winner']):
         if a == c:
             list1.append(b)
