@@ -278,7 +278,8 @@ def wickets_haul(df,player):
      l.append(a) 
   temp['is_wicket'] = l
   temp = temp.value_counts().reset_index().rename({0:'times'},axis = 1)
-  fig = go.Figure(data = go.Pie(labels = temp.is_wicket , values = temp.times))
+  return temp
+  """fig = go.Figure(data = go.Pie(labels = temp.is_wicket , values = temp.times))
   fig.update_traces(hoverinfo='percent', textinfo='label+value', textfont_size=15,
                   marker=dict(colors =  ['mediumturquoise', 'darkorange']
                 , line=dict(color='#000000', width=2)))
@@ -288,7 +289,7 @@ def wickets_haul(df,player):
     font=dict(
     size = 13)
     )
-  return fig
+  return fig"""
 
 def season_wins(df,team):
     temp_df = df.drop_duplicates(subset = ['season'],keep = 'last')
