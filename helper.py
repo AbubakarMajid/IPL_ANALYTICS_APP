@@ -17,7 +17,7 @@ def clean_data():
     df1['date'] = pd.to_datetime(df1.date,infer_datetime_format=True)
     df1['season'] = df1.date.dt.year
     
-    return df1
+    return df1,df2
 
 
 def matches_over_years(df):
