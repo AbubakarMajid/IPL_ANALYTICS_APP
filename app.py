@@ -22,8 +22,7 @@ if user_menu == 'Season Summary':
     
     
     match_per_season = df1.season.value_counts().reset_index().rename({'count':'matches'},axis = 1).sort_values("season")
-    st.table(match_per_season)
-    """
+
     season_score = season_data.groupby('season')['total_runs'].sum().reset_index()
 
     runs_per_season = pd.concat([match_per_season, season_score.iloc[:,1]], axis = 1)
@@ -46,7 +45,7 @@ if user_menu == 'Season Summary':
     player_of_seasons = ['Shane Watson','Adam Gilchrist','Sachin Tendulkar','Chris Gayle','Sunil Narine','Shane Watson',"Glenn Maxwell",'Andre Russell','Virat Kohli','Ben Stokes','Sunil Narine','Andre Russell','Jofra Archer']
     season_summary['player of the season'] = player_of_seasons
     
-    st.table(season_summary[['season','matches','total_runs','finalist 1','finalist 2','winner','runner up','player of the season']])"""
+    st.table(season_summary[['season','matches','total_runs','finalist 1','finalist 2','winner','runner up','player of the season']])
 
 
 elif user_menu == 'Overall Analysis':
